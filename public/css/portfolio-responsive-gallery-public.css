@@ -1,0 +1,372 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+/* FROM PUBLIC */
+
+.ays_project_wrapper {
+    overflow: hidden!important;
+}
+
+.fs-lightbox-mobile.fs-lightbox-iframe .fs-lightbox-content,
+.fs-lightbox-mobile.fs-lightbox-inline .fs-lightbox-content {
+    overflow-y: hidden;
+}
+
+div.fs-lightbox {
+    width: 80%!important;
+    height: 80%!important;
+    margin: auto;
+    border-radius: 10px;
+    padding: 0;
+    z-index: 10101;
+}
+
+.levon_lightbox_overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10100;
+    transition: .5s;
+    display: none;
+}
+
+.fs-lightbox-overlay {
+    background: rgba(243, 2, 65, 0.3) !important;
+}
+
+.prg-container {
+    max-width: 100%;
+    transition: .5s ease-in-out;
+    animation-duration: .5s;
+}
+
+.prg_loader {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation-duration: .5s;
+    transition: .5s ease-in-out;
+    margin-bottom: 15px;
+}
+
+div.prg_mosaic_row div.prg-cell:hover,
+div.prg_grid_row div.prg_grid_col:hover {
+    box-shadow: 0px 0px 10px;
+}
+
+div.prg_grid_row div.prg_grid_col {
+    width: 200px;
+    min-height: 250px;
+    background-size: cover;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+div.prg_grid_row div.prg_grid_col .ays_portfolio_item_image {
+    position: relative;
+    min-height: 200px;
+    height: 250px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+div.prg_mosaic_row div.prg-cell a,
+div.prg_grid_row div.prg_grid_col a {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    border: none;
+}
+
+div.prg_mosaic_row div.prg-cell a:hover,
+div.prg_grid_row div.prg_grid_col a:hover {
+    box-shadow: none;
+}
+
+div.prg_mosaic_row div.prg-cell div.prg_hover_mask i,
+div.prg_grid_row div.prg_grid_col div.prg_hover_mask i {
+    font-size: 3rem !important;
+    opacity: 1 !important;
+}
+
+div.prg_mosaic_row div.prg-cell:hover>div.prg_hover_mask,
+div.prg_grid_row div.prg_grid_col a:hover>div.prg_hover_mask {
+    opacity: 1 !important;
+    transition: all .5s;
+}
+
+div.prg_mosaic_row div.prg-cell div.prg_hover_mask,
+div.prg_grid_row div.prg_grid_col div.prg_hover_mask {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+div.prg_mosaic_row div.prg-cell:hover,
+div.prg_grid_row div.prg_grid_col:hover {
+    cursor: pointer;
+}
+
+div.prg_grid_row div.prg_grid_col div.prg_hover_mask i.ays_hover_icon_class,
+div.prg_grid_row div.prg_grid_col div.prg_hover_mask .ays_hover_icon_class,
+div.prg_mosaic_row div.prg-cell div.prg_hover_mask i.ays_hover_icon_class,
+div.prg_mosaic_row div.prg-cell div.prg_hover_mask .ays_hover_icon_class {
+    font-size: 2.5rem !important;
+    opacity: 1 !important;
+}
+
+div.prg_mosaic_row div.prg-cell .prg_hover_mask i {
+    font-size: 1.8rem !important;
+    opacity: 1 !important;
+}
+
+.prg_mosaic_container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.prg_mosaic_row {
+    margin: 0 auto;
+    max-width: 100%;
+    width: -webkit-fill-available;
+}
+
+div.prg_grid_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.prg_hover_mask .ays_project_title {
+    background-color: transparent !important;
+}
+
+.ays_project_title {
+    position: absolute;
+    bottom: 10px;
+    max-height: 50px;
+    min-height: 20px;
+    padding: 2px 0px;
+    width: 100%;
+    pointer-events: fill;
+    padding-bottom: 7px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.ays_project_title>span {
+    font-size: 16px;
+    color: white;
+    display: block;
+    max-width: 95%;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    text-overflow: ellipsis;
+    max-height: 24px;
+    word-break: unset;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div.prg_hover_mask {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 96px;
+        left: 96px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 18px;
+        left: 18px;
+        width: 156px;
+        height: 156px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes lds-ripple {
+    0% {
+        top: 96px;
+        left: 96px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 18px;
+        left: 18px;
+        width: 156px;
+        height: 156px;
+        opacity: 0;
+    }
+}
+
+.lds-ripple {
+    position: relative;
+}
+
+.lds-ripple div {
+    box-sizing: content-box;
+    position: absolute;
+    border-width: 4px;
+    border-style: solid;
+    opacity: 1;
+    border-radius: 50%;
+    -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(1) {
+    border-color: #215d38;
+}
+
+.lds-ripple div:nth-child(2) {
+    border-color: #14a651;
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+
+.lds-ripple {
+    width: 200px !important;
+    height: 200px !important;
+    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+    transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+
+@keyframes lds-disk {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes lds-disk {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.lds-disk {
+    position: relative;
+}
+
+.lds-disk>div div:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #866d66;
+}
+
+.lds-disk>div div:nth-child(2) {
+    position: absolute;
+    top: 12px;
+    left: 76px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #859971;
+    -webkit-animation: lds-disk 1.2s linear infinite;
+    animation: lds-disk 1.2s linear infinite;
+    -webkit-transform-origin: 24px 88px;
+    transform-origin: 24px 88px;
+}
+
+.lds-disk {
+    width: 42px !important;
+    height: 42px !important;
+    -webkit-transform: translate(-21px, -21px) scale(0.21) translate(21px, 21px);
+    transform: translate(-21px, -21px) scale(0.21) translate(21px, 21px);
+}
+
+.ays_image_loading_div>img {
+    width: 25px !important;
+    height: 25px !important;
+    position: absolute;
+    outline: 0;
+    border: none;
+    box-shadow: none !important;
+}
+
+.ays_image_loading_div {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    z-index: 10010;
+}
+
+.ays_portfolio_title {
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.ays_portfolio_description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

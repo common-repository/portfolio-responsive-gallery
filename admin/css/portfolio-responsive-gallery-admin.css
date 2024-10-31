@@ -1,0 +1,1047 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.ays-upload-btn {
+    position: absolute;
+    display: block;
+    color: #27AE60;
+    font-size: 23px;
+    left: 0px;
+    top: 0px;
+    line-height: 65px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+/*headings*/
+
+.ays_project_name {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 75%;
+    height: 65px;
+    border: 1px solid #ccc;
+}
+
+.ays_project_name p {
+    color: grey;
+    font-size: 18px;
+    margin: 0;
+    padding: 0px 10px;
+    line-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ays-project-fields {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding-top: 5px;
+    width: 100%;
+    max-height: 500px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    opacity: 1;
+    transform: translate(0, 0%);
+    z-index: 2;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+.ays_project_fields {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 300%;
+    max-height: 500px;
+    opacity: 1;
+    transform: translate(0, 0%);
+    z-index: 2;
+    transition: all 0.25s ease-in-out;
+}
+
+.ays_project_fields_tab {
+    display: block;
+    width: 100%;
+}
+
+.ays-project-attributes-content {
+    display: flex;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    max-height: 500px;
+    overflow: hidden;
+    /* overflow-y: scroll; */
+    line-height: 26px;
+    letter-spacing: 1px;
+    opacity: 1;
+    transform: translate(0, 0%);
+    z-index: 2;
+    transition: all 0.25s ease-in-out;
+}
+
+.ays_project_images_div::-webkit-scrollbar {
+    width: 7px;
+    background-color: grey;
+    transition: .5s ease-in-out;
+}
+
+.ays_project_images_div::-webkit-scrollbar:hover {
+    width: 10px;
+    background-color: dimgray;
+    transition: .5s ease-in-out;
+}
+
+
+/* Track */
+
+.ays_project_images_div::-webkit-scrollbar-track {
+    width: 5px;
+    background-color: #e5e5e5;
+    transition: .5s ease-in-out;
+}
+
+.ays_project_images_div::-webkit-scrollbar-track:hover {
+    width: 10px;
+    transition: .5s ease-in-out;
+}
+
+
+/* Handle */
+
+.ays_project_images_div::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #858585;
+    transition: .5s ease-in-out;
+}
+
+.ays_project_images_div::-webkit-scrollbar-thumb:hover {
+    width: 10px;
+    background-color: #ccc;
+    transition: .5s ease-in-out;
+}
+
+.ays-project-attributes-content {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+
+/* .ays-project-attributes-content-active {
+    
+} */
+
+ul.ays-accordion li .ays_project_images_path,
+ul.ays-accordion li .ays_project_main_image_path {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.ays-project-attributes-content .ays_project_images {
+    width: 30%;
+    display: flex;
+    position: relative;
+    padding: 5px;
+    margin: 0;
+    justify-content: flex-start;
+    border-right: 1px solid #ccc;
+}
+
+.ays_project_images_div {
+    display: flex;
+    position: relative;
+    padding: 5px;
+    margin: 0;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 91%;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.ays-project-attributes-content .ays_project_attr {
+    width: 70%;
+}
+
+.ays-project-attributes-content .ays_project_attr .ays_image_attr_item {
+    width: 100%;
+}
+
+.ays-project-attributes-content .ays_project_attr hr {
+    width: 100%;
+}
+
+.ays-project-attributes-content .ays_project_attr .ays_image_attr_item label {
+    text-align: left;
+    display: block;
+    text-indent: 10px;
+    font-style: italic;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+#ays-portfolio-form .ays-project-attributes-content .ays_project_attr .ays_image_attr_item #wp-project_desc-wrap {
+    width: 100%;
+}
+
+#ays-portfolio-form .ays-project-attributes-content .ays_project_attr .ays_image_attr_item input[type=text],
+#ays-portfolio-form .ays-project-attributes-content .ays_project_attr .ays_image_attr_item input[type=email],
+#ays-portfolio-form .ays-project-attributes-content .ays_project_attr .ays_image_attr_item input[type=url],
+#ays-portfolio-form .ays-project-attributes-content .ays_project_attr .ays_image_attr_item input[type=number] {
+    padding: 5px 5px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#ays-portfolio-form .ays_project_options_content {
+    width: 100%;
+    padding: 20px 20px 0;
+}
+
+#ays-portfolio-form .ays_project_options_content h6 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+span.ays-publish-status {
+    font-weight: 600;
+}
+
+span.ays-publish-status i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+span.ays-publish-status i.fa-check-square {
+    color: #28a745;
+    font-weight: 900;
+}
+
+span.ays-publish-status i.fa-square {
+    color: #dc3545;
+}
+
+.submit {
+    display: inline;
+    margin-right: 10px;
+}
+
+.transition,
+p,
+ul.ays-accordion li i:before,
+ul.ays-accordion li i:after {
+    transition: all 0.25s ease-in-out;
+}
+
+.flipIn,
+ul.ays-accordion li {
+    animation: flipdown 0.5s ease both;
+    transition: all 0.25s ease-in-out;
+}
+
+.no-select,
+ul.ays-accordion li h2 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.acordion-el-for-clone {
+    display: none;
+}
+
+ul.ays-accordion li h2 {
+    font-size: 17px;
+    line-height: 50px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    background-color: whitesmoke;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+ul.ays-accordion {
+    list-style: none;
+    perspective: 900px;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+}
+
+ul.ays-accordion li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    flex-basis: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: auto;
+    overflow: hidden;
+    padding-top: 65px;
+}
+
+ul.ays-accordion li i.ays-animated-arrow {
+    position: absolute;
+    transform: translate(-6px, 0);
+    top: 25px;
+    right: 60px;
+}
+
+ul.ays-accordion li i.ays-animated-arrow:before,
+ul.ays-accordion li i.ays-animated-arrow:after {
+    content: "";
+    position: absolute;
+    background-color: #27AE60;
+    width: 4px;
+    height: 17px;
+}
+
+ul.ays-accordion li .ays_li_collapse {
+    position: absolute;
+    cursor: pointer;
+    width: 94%;
+    height: 65px;
+    z-index: 1;
+    opacity: 0;
+    right: 0;
+    top: 4px;
+}
+
+ul.ays-accordion li .ays_li_collapse:checked~.ays-project-fields .nav-tab-wrapper a,
+ul.ays-accordion li .ays_li_collapse:checked~.ays-project-fields {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0px;
+    float: none;
+    /*    transform: translate(0, 100%);*/
+}
+
+ul.ays-accordion li i.ays-animated-arrow:before {
+    transform: translate(-7px, 0) rotate(45deg);
+}
+
+ul.ays-accordion li i.ays-animated-arrow:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+ul.ays-accordion li .ays_li_collapse:checked~i.ays-animated-arrow:before {
+    transform: translate(7px, 0) rotate(45deg);
+}
+
+ul.ays-accordion li .ays_li_collapse:checked~i.ays-animated-arrow:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+    0% {
+        opacity: 0;
+        transform-origin: top center;
+        transform: rotateX(-90deg);
+    }
+    5% {
+        opacity: 1;
+    }
+    80% {
+        transform: rotateX(8deg);
+    }
+    83% {
+        transform: rotateX(6deg);
+    }
+    92% {
+        transform: rotateX(-3deg);
+    }
+    100% {
+        transform-origin: top center;
+        transform: rotateX(0deg);
+    }
+}
+
+i.ays-delete-project {
+    position: absolute;
+    z-index: 999;
+    cursor: pointer;
+    right: 5px;
+    transform: translate(-6px, 0);
+    top: 20px;
+    font-size: 25px;
+    color: #D06079;
+}
+
+i.ays-move-images {
+    position: absolute;
+    z-index: 99999999;
+    left: 0;
+    top: 0;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    cursor: pointer;
+    background: #d3d3d3;
+    text-align: center;
+    cursor: move
+}
+
+.ays_project_main_image_div .ays_image_thumb {
+    width: 100px;
+    height: 100px;
+}
+
+.ays_image_thumb {
+    border: none;
+    outline: none;
+    width: 65px;
+    position: absolute;
+    top: 0;
+    height: 65px;
+    transition: .5s ease-in-out;
+}
+
+.ays_project_main_image_div .ays_image_thumb .ays_image_edit_div {
+    width: 100px;
+    height: 100px;
+}
+
+.ays_project_main_image_div .ays_image_thumb .ays_image_edit {
+    line-height: 100px;
+}
+
+.ays_image_thumb:hover .ays_image_edit_div {
+    opacity: 0.5;
+    background-color: black;
+    visibility: visible;
+    z-index: 12;
+}
+
+.ays_image_thumb .ays_image_edit_div {
+    visibility: hidden;
+    left: 0px;
+    z-index: 0;
+    opacity: 0;
+}
+
+.ays_project_add_images_div:hover .ays-upload-btn,
+.ays_project_add_image_div:hover .ays-upload-btn {
+    opacity: 1;
+}
+
+.ays_project_add_images_div:hover .ays_project_images_add_icon,
+.ays_project_add_image_div:hover .ays_project_images_add_icon,
+.ays_project_main_image_div:hover .ays_project_main_image_add_icon {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ays_project_add_images_div,
+.ays_project_add_image_div {
+    width: 65px;
+    height: 65px;
+    transition: .5s ease-in-out;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    animation-duration: .5s;
+}
+
+.ays_project_add_image_div .ays_delete_image:hover {
+    box-shadow: none;
+    outline: 0;
+    border: none;
+    background-color: #fff;
+}
+
+.ays_project_add_image_div .ays_delete_image:active,
+.ays_project_add_image_div .ays_delete_image:visited {
+    box-shadow: none;
+    outline: 0;
+    border: none;
+    background-color: #ccc;
+}
+
+.ays_project_add_image_div .ays_delete_image {
+    z-index: 12;
+    position: absolute;
+    display: block;
+    right: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: unset;
+    height: unset;
+    padding: 0px 5px 2px;
+    line-height: 12px;
+    outline: 0;
+    font-size: 11px;
+    border: none;
+    background-color: #ccc;
+    transition: .3s ease-in-out;
+}
+
+.ays_project_main_image_div {
+    width: 100px;
+    height: 100px;
+    transition: .5s ease-in-out;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.ays_project_main_image_div .ays_project_main_image_add_icon .ays-upload-btn {
+    line-height: 100px;
+}
+
+.ays_project_add_images_div .ays_project_images_add_icon,
+.ays_project_add_image_div .ays_project_images_add_icon,
+.ays_project_main_image_div .ays_project_main_image_add_icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+    opacity: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.ays_image_edit_div,
+.ays_image_add_div {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 70px;
+    z-index: 999;
+    transition: .5s ease-in-out;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.ays_image_edit_div {
+    border: 0;
+}
+
+.ays_image_edit_div .ays_image_edit {
+    line-height: 65px;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    transition: .5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.ays_image_thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.ays-submit {
+    vertical-align: bottom !important;
+}
+
+.ays-gallery-modal::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.ays-gallery-modal {
+    -ms-overflow-style: none;
+}
+
+input[type=text]:not(#current-page-selector),
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week],
+input[type=password],
+input[type=color],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+.ays-portfolio-tab-content select,
+#ays-portfolio-attribute-form select,
+textarea,
+.select2-selection__rendered {
+    font-size: 16px;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: -1px;
+}
+
+.disabled_textarea_div *,
+.ays_color_disabled * {
+    opacity: 0.9;
+    pointer-events: none
+}
+
+.ays-portfolio-tab-content select {
+    width: 200px;
+}
+
+.ays-disable-setting {
+    opacity: 0.5;
+}
+
+.ays-pro-link {
+    color: #f50057;
+    font-weight: bold;
+}
+
+input.ays-text-input,
+textarea.ays-textarea {
+    display: block;
+    width: 100%;
+}
+
+input.ays-text-input.ays-text-input-short {
+    width: 200px;
+}
+
+select.ays-text-input.ays-text-input-short {
+    width: 200px;
+}
+
+textarea.ays-textarea {
+    height: 70px;
+    margin-top: 5px;
+}
+
+#ays-button-top {
+    margin-left: 10px;
+}
+
+.ays-col-2 {
+    width: 50%;
+}
+
+.ays-col-2+.ays-col-2 {
+    margin-left: 10px;
+}
+
+td.ays-sort {
+    border-right: 1px solid #B8B8B8;
+}
+
+.ays-project-attributes-content,
+.ays-portfolio-tab-content {
+    animation: fadeEffect 1s;
+}
+
+.ays-project-attributes-content.ays-project-attributes-content-active {
+    z-index: 0;
+    display: flex;
+}
+
+.ays-project-attributes-content {
+    width: 100%;
+}
+
+.ays-portfolio-tab-content.ays-portfolio-tab-content-active {
+    display: block;
+}
+
+.ays-portfolio-tab-content {
+    display: none;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.nav-project-tab-wrapper .nav-project-tab:focus,
+.nav-tab-wrapper .nav-tab:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.fa-check {
+    color: #69C7F1;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+/* Start notice banner style */
+
+.ays-notice-banner {
+    width: calc(100% - 20px);
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+
+/* ~~ Top Navigation Bar ~~ */
+
+.ays-notice-banner #navigation-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.ays-notice-banner .navigation-bar {
+    width: 100%;
+    text-align: center;
+}
+
+.ays-notice-banner .navigation-bar a.logo-container {
+    margin: 0 0 0 20px;
+}
+
+.ays-notice-banner .navigation-bar a.logo-container .logo {
+    float: left;
+    width: 80px;
+}
+
+.ays-notice-banner .navigation-bar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 0;
+    margin: 0 20px 0 0;
+    max-width: 630px;
+    min-width: 400px;
+}
+
+.ays-notice-banner .navigation-bar li {
+    padding: 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.ays-notice-banner .navigation-bar li a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    letter-spacing: 0;
+}
+
+.ays-notice-banner .navigation-bar li a:after {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.ays-notice-banner .navigation-bar li a:hover:after {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+}
+
+
+/* End notice banner style */
+
+p.ays-subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#ays-category,
+#ays-type {
+    width: 100%;
+}
+
+.ays-text-input {
+    width: 100%;
+    height: 40px;
+}
+
+.information_form_options input {
+    margin-top: 15px;
+}
+
+.tablenav-pages-navspan {
+    height: auto !important;
+}
+
+.select2 {
+    display: block;
+}
+
+.tablenav .actions select {
+    float: left;
+    margin-right: 6px;
+    max-width: 200px;
+}
+
+.ays-modal-header {
+    color: #666;
+}
+
+.wrap form th {
+    font-size: 15px;
+}
+
+#wpwrap {
+    background: #f1f1f1;
+}
+
+.disabled-button {
+    border: none;
+    font-size: 14px;
+    padding: 4px 6px 5px 8px;
+    background: #0073aa;
+    color: white;
+    opacity: 0.5;
+}
+
+.disabled-button+.disabled-button {
+    margin-left: 10px;
+}
+
+.disabled-button:hover {
+    cursor: pointer;
+}
+
+.disabled-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.disabled-buttons-container:hover {
+    text-decoration: none;
+}
+
+h1.wp-heading-inline {
+    margin-bottom: 20px;
+}
+
+.disabled_row_p {
+    display: inline-block;
+    font-size: 12px;
+    font-style: italic;
+    padding: 10px !important;
+    margin-left: 10px !important;
+    width: 100%;
+}
+
+.ays_pro_content {
+    display: flex;
+}
+
+.prg_opacity_demo_val {
+    width: 200px;
+}
+
+.prg_opacity_demo {
+    padding: 5px;
+    background-color: black;
+    opacity: 0.5;
+    width: 30%;
+    display: inline-block;
+    color: white;
+    margin: 0px;
+    position: relative;
+    top: -8px;
+}
+
+.ays_prg_image_hover_icon {
+    margin-right: 5px;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+}
+
+.ays_prg_image_hover_icon_text {
+    margin: 0;
+}
+
+.ays_prg_image_hover_icon_text span {
+    font-style: italic;
+    color: gray;
+}
+
+label.show_with_date,
+div.show_with_date {
+    display: inline-block;
+}
+
+.ays_project_add_images_div {
+    background-image: url('../images/add-images.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.ays_project_main_image_div,
+.ays_project_add_image_div {
+    background-image: url('../images/no-photo.png');
+    background-size: 220px 125px;
+    background-position: center center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.ays_project_main_img {
+    display: block;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 70px;
+    top: 0;
+    transition: .5s ease-in-out;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-image: url('../images/no-photo.png');
+    background-size: 220px 125px;
+    background-position: center center;
+}
+
+.manage-column.column-id {
+    width: 10%;
+}
+
+.manage-column.column-shortcode {
+    width: 35%;
+}
+
+span.ays_prg_image_hover_icon_text {
+    font-style: italic;
+    color: gray;
+    display: inline-block;
+    font-size: 12px;
+}
+
+p.ays_prg_image_hover_icon_text {
+    margin: 0;
+}
+
+p.ays_prg_image_hover_icon_text span {
+    font-style: italic;
+    color: gray;
+}
+
+.ays_help {
+    top: 1px;
+    position: relative;
+    color: var(--info) !important;
+    cursor: help;
+}
+
+.ays_help i {
+    font-size: 14px !important;
+}
+
+.tooltip {
+    text-align: left !important;
+    position: absolute !important;
+    left: 20px !important;
+}
+
+.tooltip .tooltip-inner {
+    position: relative !important;
+    z-index: 99999999999 !important;
+    width: auto !important;
+    max-width: 16vw !important;
+    /* text-align: justify!important; */
+}
+
+#ays-columns-count input.ays-text-input.ays-text-input-short {
+    display: inline-block;
+}
+
+#ays-portfolio-form select,
+#ays-portfolio-form input[type="text"],
+#ays-portfolio-form input[type="number"] {
+    height: 40px;
+}
+
+#ays-portfolio-form input[type="number"] {
+    width: 200px;
+}
+
+.select2-selection__rendered {
+    line-height: 38px !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 40px !important;
+}
+
+.select2-selection__arrow {
+    height: 38px !important;
+}
+
+
+/* Alert styles */
+
+.ays-alert {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.ays-alert .close {
+    padding: .55rem 1.25rem;
+}
+
+.ays-alert .close:focus {
+    outline: none;
+}

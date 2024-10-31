@@ -1,0 +1,37 @@
+.grid {
+/*    background: #DDD;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+
+.grid-item a {
+    position: relative;
+}
+
+.grid-item {
+    float: none;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+@media all and (max-width: 768px){
+	.grid-sizer,
+	.grid-item {
+	  width: 100%;
+	}
+}
